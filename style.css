@@ -22,7 +22,7 @@ span {
 .container-popup {
     position: relative;
     margin: 12% auto;
-    width: 100%;
+    width: 80%;
     max-width: 550px;
     height: 300px;
     border-radius: 10px;
@@ -32,7 +32,7 @@ span {
 
 .button-popup {
     position: relative;
-    bottom: 2cqmin;
+    bottom: 20px;
 }
 
 .text-score {
@@ -43,3 +43,59 @@ span {
 .message-points {
     margin: 25px;
 }
+
+
+@media screen and (max-width: 510px) {
+/* MAX WIDTH = TELAS MENORES QUE ALGUMA*/
+
+span {
+    font-size: 40px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.message-points {
+    margin: 5px;
+    font-size: 18px;
+   
+}
+
+.button-popup {
+    position: relative;
+    bottom: 20px;
+    width: 80px;
+    padding: 5px;
+    font-size: 12px;
+    bottom: -10px;
+}
+
+.container-popup {
+    position: relative;
+    margin: 12% auto;
+    width: 80%;
+    max-width: 550px;
+    height: 280px;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+.button-form {
+    position: relative;
+    width: 150px;
+    left: -40px;
+    
+}
+
+}
+
+@media screen and (max-width: 955px) {
+    .button-form {
+        position: relative;
+        width: 150px;
+        left: -40px;
+        
+    }
+
+}
+
