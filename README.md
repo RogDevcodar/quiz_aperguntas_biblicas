@@ -1,3 +1,3 @@
 # quiz_assuntos_gerais
-Neste projeto aprendi a manipular o DOM com Javascript
+Clique no link para acessar o Quiz:
 https://rogdevcodar.github.io/quiz_assuntos_gerais/
