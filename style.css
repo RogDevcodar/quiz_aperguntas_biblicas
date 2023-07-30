@@ -45,7 +45,16 @@ span {
 }
 
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 955px) {
+    .button-form {
+        position: relative;
+        width: 150px;
+        left: -40px;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
 /* MAX WIDTH = TELAS MENORES QUE ALGUMA*/
 
 span {
@@ -56,7 +65,7 @@ span {
 
 .message-points {
     margin: 5px;
-    font-size: 18px;
+    font-size: 14px;
    
 }
 
@@ -72,7 +81,7 @@ span {
 .container-popup {
     position: relative;
     margin: 12% auto;
-    width: 80%;
+    width: 90%;
     max-width: 550px;
     height: 280px;
     border-radius: 10px;
@@ -89,13 +98,17 @@ span {
 
 }
 
-@media screen and (max-width: 955px) {
-    .button-form {
-        position: relative;
-        width: 150px;
-        left: -40px;
-        
+@media screen and (max-width: 400px) {
+    /* MAX WIDTH = TELAS MENORES QUE ALGUMA*/
+
+    .message-points {
+        margin: 2px;
+        font-size: 10px;
+       
     }
 
-}
+} 
+
+
+
 
