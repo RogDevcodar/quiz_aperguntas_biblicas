@@ -59,14 +59,15 @@ span {
 
 span {
     font-size: 40px;
-    margin: 10px;
+    margin: 5px;
     font-weight: bold;
 }
 
 .message-points {
+    position: relative;
     margin: 5px;
-    font-size: 14px;
-   
+    font-size: 18px;
+    top: -20px;
 }
 
 .button-popup {
@@ -75,7 +76,7 @@ span {
     width: 80px;
     padding: 5px;
     font-size: 12px;
-    bottom: -10px;
+    
 }
 
 .container-popup {
@@ -83,7 +84,7 @@ span {
     margin: 12% auto;
     width: 90%;
     max-width: 550px;
-    height: 280px;
+    height: 220px;
     border-radius: 10px;
     border: 5px solid rgb(0, 0, 0, 0.5);
     padding: 5px;
@@ -96,19 +97,41 @@ span {
     
 }
 
+.message1-popup {
+    position: relative;
+    top: 5px;
 }
 
-@media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 412px) {
     /* MAX WIDTH = TELAS MENORES QUE ALGUMA*/
 
     .message-points {
+        position: relative;
         margin: 2px;
-        font-size: 10px;
-       
+        font-size: 14px;
+        top: -30px;
     }
 
-} 
 
+    .container-popup {
+        position: relative;
+        margin: 12% auto;
+        width: 90%;
+        max-width: 550px;
+        height: 220px;
+        border-radius: 10px;
+        border: 5px solid rgb(0, 0, 0, 0.5);
+        padding: 5px;
+    }
 
-
+    .button-popup {
+        position: relative;
+        bottom: 30px;
+        width: 80px;
+        padding: 5px;
+        font-size: 12px;
+ } 
+}
 
