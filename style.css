@@ -44,6 +44,19 @@ span {
     margin: 25px;
 }
 
+footer {
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+
 
 @media screen and (max-width: 955px) {
     .button-form {
@@ -134,4 +147,3 @@ span {
         font-size: 12px;
  } 
 }
-
