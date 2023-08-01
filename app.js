@@ -52,13 +52,16 @@ const sumScore = (arrayCheckedUser, index) => {
 //forEach da const sumScore
 arrayCheckedUsers.forEach(sumScore)
 
+//Ao clicar no submit a classe d-none é removida para o score ser exibido na popup.
+section.classList.remove('d-none');
+
 // Animação da pontuação do quiz
     const timerCount = setInterval(() => {
                    
-        if (countPoints === score)
-        clearInterval(timerCount);
+        if (countPoints === score) {
+        clearInterval(timerCount); // Para a animação ao atingir a pontuação do usuário.
+    }
         divScore.querySelector('span').textContent = `${countPoints}%`;
-        section.classList.remove('d-none');
         countPoints++;
     },10)  
 
