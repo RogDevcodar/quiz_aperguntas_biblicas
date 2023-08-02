@@ -79,7 +79,7 @@ const bigNinetySmallerHundred = score > 90 && score <= 100;
     }   else if (bigSixtySmallerNinety) {
         messagePoints.textContent = 'Muito bem! Você tem um bom conhecimento geral.'
     }   else if (bigNinetySmallerHundred){
-        messagePoints.textContent = 'Parabéns! Você é um especialista em assusntos gerais!'
+        messagePoints.textContent = 'Parabéns! Você é um especialista em assuntos gerais!'
     }
 });
 
