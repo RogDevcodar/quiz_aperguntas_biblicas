@@ -6,6 +6,8 @@ const divScore = document.querySelector('.divScore');
 
 //Referenciamento do segundo parágrafo da popup
 const messagePoints = document.querySelector('.message-points');
+//Referenciamento do terceiro parágrafo das respostas da popup
+const paragraphRespostas = document.querySelector('.respostas');
 
 //Referenciamento da tela de fundo acizentada da popup
 const section = document.querySelector('.background-popup');
@@ -23,7 +25,7 @@ form.addEventListener('submit', event => {
     
 
 //Consts contendo as mensagens que avalia as respostas do usuário.
-
+console.log(form.flexRadioDefault1.value);
 
     //Array com os checkeds dos inputs clicados pelo usuário.
     const arrayCheckedUsers = [
@@ -54,6 +56,7 @@ arrayCheckedUsers.forEach(sumScore)
 
 //Ao clicar no submit a classe d-none é removida para o score ser exibido na popup.
 section.classList.remove('d-none');
+paragraphRespostas.innerHTML = `<b>Respostas:</b> <b>1.</b> b) | <b>2.</b> a) | <b>3.</b> d) | <b>4.</b> b) | <b>5.</b> b) | <b>6.</b> b) | <b>7.</b> a) | <b>8.</b> a) | <b>9.</b> d) | <b>10.</b> a)`;
 
 // Animação da pontuação do quiz
     const timerCount = setInterval(() => {
@@ -79,7 +82,7 @@ const bigNinetySmallerHundred = score > 90 && score <= 100;
     }   else if (bigSixtySmallerNinety) {
         messagePoints.textContent = 'Muito bem! Você tem um bom conhecimento geral.'
     }   else if (bigNinetySmallerHundred){
-        messagePoints.textContent = 'Parabéns! Você é um especialista em assuntos gerais!'
+        messagePoints.textContent = 'Parabéns! Você é um especialista em assusntos gerais!'
     }
 });
 
@@ -88,3 +91,9 @@ buttonPopup.addEventListener('click', () => {
 
     section.classList.add('d-none');
 })
+
+
+
+
+
+
