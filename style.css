@@ -4,10 +4,23 @@
     padding: 0;
 }
 
+.background-body {
+    background: linear-gradient(45deg, rgb(128, 178, 128), rgb(214, 255, 152));
+}
+
+
+/*INÍCIO POPUP*/
 span {
-    font-size: 50px;
+    font-size: 40px;
     margin: 20px;
     font-weight: bold;
+}
+
+.respostas {
+    
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
 }
 
 .background-popup {
@@ -20,19 +33,30 @@ span {
 }
 
 .container-popup {
-    position: relative;
+    display: block;
+    justify-content: center;
+    /* position: relative; */
     margin: 12% auto;
     width: 80%;
     max-width: 550px;
     height: 300px;
     border-radius: 10px;
-    border: 5px solid rgb(0, 0, 0, 0.5);
+    border: 8px solid #FFF;
     padding: 5px;
+    background: linear-gradient(45deg, rgb(234, 254, 203), rgb(214, 255, 152));
 }
 
-.button-popup {
+ .button-popup {
     position: relative;
-    bottom: 20px;
+    bottom: -50px;
+    background-color: #006400;
+    color: #FFF;
+}
+
+.button-popup:hover {
+    background: #128912;
+    color: #FFF;
+    
 }
 
 .text-score {
@@ -40,8 +64,29 @@ span {
     top: 20px;
 }
 
-.message-points {
-    margin: 25px;
+/*FIM POPUP*/
+
+.h1 {
+    text-shadow: 1px 1px 4px #000;
+    box-shadow: 0 10px 16px 0 #000;
+    background: linear-gradient(45deg, rgb(0, 75, 0), rgb(0, 191, 0));
+}
+
+.sub-titulo {
+   color: #006400;
+}
+
+.form-check-label {
+    color: #000;
+}
+
+.h5 {
+    color: #000;
+    
+}
+
+.form-check-input {
+    border: 1px solid #bdb5b5;
 }
 
 footer {
@@ -57,18 +102,56 @@ footer {
     
 }
 
-
-@media screen and (max-width: 955px) {
-    .button-form {
-        position: relative;
-        width: 150px;
-        left: -40px;
-    }
-
+.message1-popup {
+    position: relative;
+    top: 20px;
+    font-size: 25px;
 }
 
-@media screen and (max-width: 580px) {
+.message-points {
+    position: relative;
+    margin: 5px;
+    font-size: 18px;
+    top: 5px;
+}
+
+.button-form {
+    background-color: #006400;
+    color: #FFF;
+}
+.button-form:hover {
+    background: #128912;
+    color: #FFF;
+    
+}
+
+
+@media screen and (max-width: 586px) {
 /* MAX WIDTH = TELAS MENORES QUE ALGUMA*/
+.message1-popup {
+    position: relative;
+    top: 12px;
+    font-size: 20px;
+}
+.container-popup {
+    display: block;
+    justify-content: center;
+    /* position: relative; */
+    margin: 12% auto;
+    width: 80%;
+    max-width: 550px;
+    height: 300px;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+.respostas {
+    top: 300px;
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
+}
 
 span {
     font-size: 40px;
@@ -76,31 +159,22 @@ span {
     font-weight: bold;
 }
 
+
+
 .message-points {
     position: relative;
     margin: 5px;
-    font-size: 18px;
-    top: -20px;
+    font-size: 15px;
+    top: 5px;
 }
 
 .button-popup {
     position: relative;
-    bottom: 20px;
+    bottom: -40px;
     width: 80px;
     padding: 5px;
     font-size: 12px;
     
-}
-
-.container-popup {
-    position: relative;
-    margin: 12% auto;
-    width: 90%;
-    max-width: 550px;
-    height: 220px;
-    border-radius: 10px;
-    border: 5px solid rgb(0, 0, 0, 0.5);
-    padding: 5px;
 }
 
 .button-form {
@@ -117,17 +191,20 @@ span {
 
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width:517px) {
     /* MAX WIDTH = TELAS MENORES QUE ALGUMA*/
-
-    .message-points {
+    .message1-popup {
         position: relative;
-        margin: 2px;
-        font-size: 14px;
-        top: -30px;
+        top: 12px;
+        font-size: 18px;
     }
-
-
+    
+    span {
+        font-size: 30px;
+        margin: 20px;
+        font-weight: bold;
+    }
+    
     .container-popup {
         position: relative;
         margin: 12% auto;
@@ -136,14 +213,55 @@ span {
         height: 220px;
         border-radius: 10px;
         border: 5px solid rgb(0, 0, 0, 0.5);
-        padding: 5px;
+        padding: 12px;
     }
+
+    .respostas {
+        
+        font-size: 10px;
+        margin: -20px auto;
+        text-align: center;
+    }
+
+    .message-points {
+        position: relative;
+        margin: 2px;
+        font-size: 13px; /*ALTERADO*/
+        top: -10px;
+    }
+ 
 
     .button-popup {
         position: relative;
-        bottom: 30px;
+        bottom: -40px;
         width: 80px;
         padding: 5px;
         font-size: 12px;
  } 
 }
+
+@media screen and (max-width:401px) {
+
+    .message1-popup {
+        position: relative;
+        top: 10px;
+        font-size: 15px;
+    }
+
+    span {
+        font-size: 20px;
+        margin: 20px;
+        font-weight: bold;
+    }
+
+    .respostas {
+        
+        font-size: 8px;
+        margin: -20px auto;
+        text-align: center;
+    }
+
+
+}
+
+
