@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <title>Quiz</title>
 </head>
-<body class="bg-body-secondary">
-     <p class="h1 text-center bg-dark text-white p-4">QUIZ DE CONHECIMENTOS GERAIS</p>
+<body class="background-body">
+     <p class="h1 text-center text-white p-4">QUIZ DE CONHECIMENTOS GERAIS</p>
   
  <!--INÍCIO DO POPUP-->   
     <section class="background-popup d-none">
     <div class="divScore bg-white container-popup">
-        <p class="message1-popup text-center fs-3 text-score">Você acertou<span>0%</span>das perguntas</p>
+        <p class="message1-popup text-center text-score">Você acertou<span>0%</span>das perguntas</p>
         <p class="message-points h4 p-4 text-center text-blue"></p>
-        <button class="button-popup d-grid gap-2 col-2 mx-auto btn btn-dark">Fechar</button>
+        <p class="respostas"></p>
+        <button class="button-popup d-grid gap-2 col-2 mx-auto btn">Fechar</button>
     </div>
     </section>
  <!--FIM DO POPUP-->  
  
-     <h2 class="text-center p-3">Teste seus conhecimentos em 10 perguntas!</h2>
+     <h2 class="sub-titulo text-center p-3">Teste seus conhecimentos em 10 perguntas!</h2>
     <br>
 <!--INÍCIO DO FORM-->
 <form class="form-container px-5">
@@ -29,25 +30,25 @@
     <div class="form-check">
         <input class="form-check-input" type="radio" name="name1" id="flexRadioDefault1" value="A">
         <label class="form-check-label" for="flexRadioDefault">
-          Marte
+          a ) Marte
         </label>
       </div>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="name1" id="flexRadioDefault1" value="B">
         <label class="form-check-label" for="flexRadioDefault">
-          Júpter
+          b ) Júpter
         </label>
       </div>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="name1" id="flexRadioDefault1" value="C">
         <label class="form-check-label" for="flexRadioDefault">
-          Terra
+          c ) Terra
         </label>
       </div>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="name1" id="flexRadioDefault1" value="D" >
         <label class="form-check-label" for="flexRadioDefault">
-          Saturno
+          d ) Saturno
         </label>
       </div>
 
@@ -58,25 +59,25 @@
       <div class="form-check">
           <input class="form-check-input" type="radio" name="name2" id="flexRadioDefault2" value="A">
           <label class="form-check-label" for="flexRadioDefault1">
-            Japão
+            a ) Japão
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="name2" id="flexRadioDefault2" value="B">
           <label class="form-check-label" for="flexRadioDefault1">
-            China
+            b ) China
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="name2" id="flexRadioDefault2" value="C">
           <label class="form-check-label" for="flexRadioDefault1">
-            Coréia do Sul
+            c ) Coréia do Sul
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="name2" id="flexRadioDefault2" value="D">
           <label class="form-check-label" for="flexRadioDefault1">
-            Índia
+            d ) Índia
           </label>
         </div>
   
@@ -87,25 +88,25 @@
         <div class="form-check">
             <input class="form-check-input" type="radio" name="name3" id="flexRadioDefault3" value="A">
             <label class="form-check-label" for="flexRadioDefault2">
-              Michelangelo
+              a ) Michelangelo
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="name3" id="flexRadioDefault3" value="B">
             <label class="form-check-label" for="flexRadioDefault2">
-              Vicent van Gogh
+              b ) Vicent van Gogh
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="name3" id="flexRadioDefault3" value="C">
             <label class="form-check-label" for="flexRadioDefault2">
-              Pablo Picasso
+              c ) Pablo Picasso
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="name3" id="flexRadioDefault3" value="D">
             <label class="form-check-label" for="flexRadioDefault2">
-              Leonardo da Vince
+              d ) Leonardo da Vince
             </label>
           </div>
     
@@ -116,25 +117,25 @@
           <div class="form-check">
               <input class="form-check-input" type="radio" name="name4" id="flexRadioDefault4" value="A">
               <label class="form-check-label" for="flexRadioDefault3">
-                Toronto
+                a ) Toronto
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="name4" id="flexRadioDefault4" value="B">
               <label class="form-check-label" for="flexRadioDefault3">
-                Ottawa
+                b ) Ottawa
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="name4" id="flexRadioDefault4" value="C">
               <label class="form-check-label" for="flexRadioDefault3">
-                Vancouver
+                c ) Vancouver
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="name4" id="flexRadioDefault4" value="D">
               <label class="form-check-label" for="flexRadioDefault34">
-                Montreal
+                d ) Montreal
               </label>
             </div>
       
@@ -145,25 +146,25 @@
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="name" id="flexRadioDefault5" value="A">
                 <label class="form-check-label" for="flexRadioDefault4">
-                  Cobre
+                  a ) Cobre
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="name5" id="flexRadioDefault5" value="B">
                 <label class="form-check-label" for="flexRadioDefault5=4">
-                  Ferro
+                  b ) Ferro
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="name5" id="flexRadioDefault5" value="C">
                 <label class="form-check-label" for="flexRadioDefault4">
-                  Prata
+                 c ) Prata
                 </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="name5" id="flexRadioDefault5" value="D" >
                 <label class="form-check-label" for="flexRadioDefault4">
-                  Ouro
+                  d ) Ouro
                 </label>
               </div>
         
@@ -173,25 +174,25 @@
               <div class="form-check">
                   <input class="form-check-input" type="radio" name="name6" id="flexRadioDefault6" value="A">
                   <label class="form-check-label" for="flexRadioDefault5">
-                    Isaac Newton
+                    a ) Isaac Newton
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="name6" id="flexRadioDefault6" value="B">
                   <label class="form-check-label" for="flexRadioDefault5">
-                    Albert Einstein
+                    b ) Albert Einstein
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="name6" id="flexRadioDefault6" value="C">
                   <label class="form-check-label" for="flexRadioDefault5">
-                    Galileu Galilei
+                    c ) Galileu Galilei
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="name6" id="flexRadioDefault6" value="D">
                   <label class="form-check-label" for="flexRadioDefault5">
-                    Stephen Hawking
+                    d ) Stephen Hawking
                   </label>
                 </div>
           
@@ -201,25 +202,25 @@
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="name7" id="flexRadioDefault7" value="A">
                     <label class="form-check-label" for="flexRadioDefault6">
-                      Améria do Sul
+                      a ) Améria do Sul
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="name7" id="flexRadioDefault7" value="B">
                     <label class="form-check-label" for="flexRadioDefault6">
-                      África
+                      b ) África
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="name7" id="flexRadioDefault7" value="C">
                     <label class="form-check-label" for="flexRadioDefault6">
-                      América do Norte
+                      c ) América do Norte
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="name7" id="flexRadioDefault7" value="D">
                     <label class="form-check-label" for="flexRadioDefault6">
-                      Oceania
+                      d ) Oceania
                     </label>
                   </div>
             
@@ -229,25 +230,25 @@
                   <div class="form-check">
                       <input class="form-check-input" type="radio" name="name8" id="flexRadioDefault8" value="A">
                       <label class="form-check-label" for="flexRadioDefault7">
-                        Fígado
+                        a ) Fígado
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="name8" id="flexRadioDefault8" value="B">
                       <label class="form-check-label" for="flexRadioDefault7">
-                        Pulmão
+                        b ) Pulmão
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="name8" id="flexRadioDefault8" value="C">
                       <label class="form-check-label" for="flexRadioDefault7">
-                        Coração
+                        c ) Coração
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="name8" id="flexRadioDefault8" value="D">
                       <label class="form-check-label" for="flexRadioDefault7">
-                        Cérebro
+                        d ) Cérebro
                       </label>
                     </div>
               
@@ -257,25 +258,25 @@
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="name9" id="flexRadioDefault9" value="A">
                         <label class="form-check-label" for="flexRadioDefault8">
-                          Sydney
+                          a ) Sydney
                         </label>
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="name9" id="flexRadioDefault9" value="B">
                         <label class="form-check-label" for="flexRadioDefault8">
-                          Melbourne
+                          b) Melbourne
                         </label>
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="name9" id="flexRadioDefault9" value="C">
                         <label class="form-check-label" for="flexRadioDefault8">
-                          Brisbane
+                          c ) Brisbane
                         </label>
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="name9" id="flexRadioDefault9" value="D">
                         <label class="form-check-label" for="flexRadioDefault8">
-                          Camberra
+                          d) Camberra
                         </label>
                       </div>
                 
@@ -286,30 +287,30 @@
                       <div class="form-check">
                           <input class="form-check-input" type="radio" name="name10" id="flexRadioDefault10" value="A">
                           <label class="form-check-label" for="flexRadioDefault9">
-                            Willian Shakespeare
+                            a ) Willian Shakespeare
                           </label>
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="radio" name="name10" id="flexRadioDefault10" value="B">
                           <label class="form-check-label" for="flexRadioDefault9">
-                            George Bernard Shaw
+                            b ) George Bernard Shaw
                           </label>
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="radio" name="name10" id="flexRadioDefault10" value="C">
                           <label class="form-check-label" for="flexRadioDefault9">
-                            Oscar Wilde
+                            c ) Oscar Wilde
                           </label>
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="radio" name="name10" id="flexRadioDefault10" value="D">
                           <label class="form-check-label" for="flexRadioDefault9">
-                            Arthur Miller
+                            d ) Arthur Miller
                           </label>
                         </div>
                         <br>
             <div class="d-grid gap-2 col-2 mx-auto">
-               <button class="button-form btn btn-dark">Enviar respostas</button>
+               <button class="button-form btn">Enviar respostas</button>
             </div>  
 <!--FINAL DO FORM-->               
         </form>
