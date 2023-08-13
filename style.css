@@ -125,6 +125,15 @@ footer {
     
 }
 
+@media screen and (max-width: 956px) {
+
+    .button-form {
+        background-color: #006400;
+        color: #FFF;
+        width: 100px;
+    }
+}
+
 
 @media screen and (max-width: 586px) {
 /* MAX WIDTH = TELAS MENORES QUE ALGUMA*/
@@ -145,7 +154,11 @@ footer {
     border: 5px solid rgb(0, 0, 0, 0.5);
     padding: 5px;
 }
-
+.button-form {
+    background-color: #006400;
+    color: #FFF;
+    width: 300px;
+}
 .respostas {
     top: 300px;
     font-size: 12px;
@@ -195,12 +208,12 @@ span {
     /* MAX WIDTH = TELAS MENORES QUE ALGUMA*/
     .message1-popup {
         position: relative;
-        top: 12px;
-        font-size: 18px;
+        top: 10px;
+        font-size: 14px;
     }
     
     span {
-        font-size: 30px;
+        font-size: 35px;
         margin: 20px;
         font-weight: bold;
     }
@@ -238,6 +251,16 @@ span {
         padding: 5px;
         font-size: 12px;
  } 
+
+
+ .h5 {
+    font-size: 15px;
+ }
+
+ .sub-titulo {
+    color: #006400;
+    font-size: 18px;
+ }
 }
 
 @media screen and (max-width:401px) {
@@ -249,7 +272,7 @@ span {
     }
 
     span {
-        font-size: 20px;
+        font-size: 35px;
         margin: 20px;
         font-weight: bold;
     }
@@ -260,7 +283,11 @@ span {
         margin: -20px auto;
         text-align: center;
     }
-
+    .sub-titulo {
+        color: #006400;
+        font-size: 18px;
+     }
+   
 
 }
 
