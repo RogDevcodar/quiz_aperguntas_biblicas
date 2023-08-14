@@ -70,23 +70,28 @@ paragraphRespostas.innerHTML = `<b>Respostas:</b> <b>1.</b> b) | <b>2.</b> a) | 
 
 //Consts da condicional de avaliação das respostas
 const smallerZero = score < 10;
-const smallerOrEqualThirty = score > 10 && score <= 30;
+const smallerOrEqualThirty = score >= 10 && score <= 30;
 const bigThirtySmallerSixty = score > 30 && score <= 60;
 const bigSixtySmallerNinety = score > 60 && score <= 90;
 const bigNinetySmallerHundred = score > 90 && score <= 100;
 
 //Condicional de avaliação das respostas
-    if (smallerOrEqualThirty) {
-       messagePoints.textContent = 'Precisa estudar mais! Mas com esforço você consegue.'
+    if (smallerZero) {
+        messagePoints.textContent = 'Você não acertou nenhuma questão? Que tal tentar novamente?'
+        paragraphRespostas.style.display = 'none';
+    }    else if (smallerOrEqualThirty) {
+        messagePoints.textContent = 'Precisa estudar mais! Mas com esforço você consegue.'
+        paragraphRespostas.style.display = 'block';
     }   else if (bigThirtySmallerSixty) {
         messagePoints.textContent = 'Não está mal, mas ainda há espaço para melhorar.'
+        paragraphRespostas.style.display = 'block';
     }   else if (bigSixtySmallerNinety) {
         messagePoints.textContent = 'Muito bem! Você tem um bom conhecimento geral.'
+        paragraphRespostas.style.display = 'block';
     }   else if (bigNinetySmallerHundred){
         messagePoints.textContent = 'Parabéns! Você é um especialista em assusntos gerais!'
-    }   else if (smallerZero){
-        messagePoints.textContent = 'Você não acertou nenhuma questão? Que tal tentar novamente?'
-    }    
+        paragraphRespostas.style.display = 'block';
+    }   
 });
 
 // Evento de  click que fecha a popup.
@@ -94,3 +99,9 @@ buttonPopup.addEventListener('click', () => {
 
     section.classList.add('d-none');
 })
+
+
+
+
+
+
