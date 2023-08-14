@@ -76,6 +76,7 @@ span {
 
 .sub-titulo {
    color: #000;
+   font-size: 25px;
 }
 
 .form-check-label {
@@ -150,9 +151,6 @@ footer {
     
 }
 
-
-
-
 @media screen and (max-width: 586px) {
 /* MAX WIDTH = TELAS MENORES QUE ALGUMA*/
 
@@ -194,7 +192,7 @@ footer {
     max-width: 550px;
     height: 300px;
     border-radius: 10px;
-    border: 5px solid rgb(0, 0, 0, 0.5);
+    border: 5px solid #FFF;
     padding: 5px;
 }
 
@@ -243,14 +241,12 @@ span {
 
     .text-h1{
         text-shadow: 1px 1px 2px #000;
-        box-shadow: 4 6px 8px 0 #000;
+        box-shadow: 0 6px 8px 0 #000;
         background: linear-gradient(45deg, rgb(0, 75, 0), rgb(0, 191, 0));
         font-size: 40px;
         padding: 40px;
     }
-    .text-h1{
-        font-size: 25px;
-    }
+   
 
     .h5 {
         color: #000;
@@ -281,7 +277,7 @@ span {
         max-width: 550px;
         height: 220px;
         border-radius: 10px;
-        border: 5px solid rgb(0, 0, 0, 0.5);
+        border: 5px solid #FFF;
         padding: 12px;
     }
 
@@ -315,7 +311,7 @@ span {
 
  .sub-titulo {
     color: #000;
-    font-size: 20px;
+    font-size: 25px;
  }
  .button-form {
     background-color: #006400;
@@ -333,9 +329,9 @@ span {
 
     .text-h1{
         text-shadow: 1px 1px 2px #000;
-        box-shadow: 4 6px 8px 0 #000;
+        box-shadow: 0 4px 6px 0 #000;
         background: linear-gradient(45deg, rgb(0, 75, 0), rgb(0, 191, 0));
-        font-size: 40px;
+        font-size: 30px;
         padding: 40px;
     }
     .h5 {
@@ -343,11 +339,7 @@ span {
         font-size: 13px;
     }
 
-    .text-h1{
-        font-size: 20px;
-    }
-
-    .message1-popup {
+       .message1-popup {
         position: relative;
         top: -5px;
         font-size: 14px;
@@ -372,7 +364,7 @@ span {
     }
     .sub-titulo {
         color: #000;
-        font-size: 15px;
+        font-size: 17px;
      }
      .button-form {
         background-color: #006400;
@@ -386,19 +378,24 @@ span {
         font-size: 14px;
     }
 
+    .message-points {
+        position: relative;
+        margin: 2px;
+        font-size: 10px; /*ALTERADO*/
+        top: -20px;
+    }
+
 }
 
-@media screen and (max-width:339px) {
+@media screen and (max-width:369px) {
     .text-h1{
         text-shadow: 1px 1px 2px #000;
-        box-shadow: 4 6px 8px 0 #000;
+        box-shadow: 4 4px 6px 0 #000;
         background: linear-gradient(45deg, rgb(0, 75, 0), rgb(0, 191, 0));
-        font-size: 40px;
+        font-size: 30px;
         padding: 40px;
     }
-    .text-h1{
-        font-size: 15px;
-    }
+ 
     .h5 {
         color: #000;
         font-size: 13px;
@@ -426,6 +423,21 @@ span {
     }
     .sub-titulo {
         color: #000;
-        font-size: 15px;
+        font-size: 17px;
      }
+
+     .button-popup {
+        position: relative;
+        bottom: -30px;
+        width: 80px;
+        padding: 5px;
+        font-size: 12px;
+    
+ } 
+ .message-points {
+    position: relative;
+    margin: 2px;
+    font-size: 10px; /*ALTERADO*/
+    top: -20px;
+}
 }
