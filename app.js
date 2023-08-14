@@ -69,7 +69,8 @@ paragraphRespostas.innerHTML = `<b>Respostas:</b> <b>1.</b> b) | <b>2.</b> a) | 
     },10)  
 
 //Consts da condicional de avaliação das respostas
-const smallerOrEqualThirty = score <= 30;
+const smallerZero = score < 10;
+const smallerOrEqualThirty = score > 10 && score <= 30;
 const bigThirtySmallerSixty = score > 30 && score <= 60;
 const bigSixtySmallerNinety = score > 60 && score <= 90;
 const bigNinetySmallerHundred = score > 90 && score <= 100;
@@ -83,7 +84,9 @@ const bigNinetySmallerHundred = score > 90 && score <= 100;
         messagePoints.textContent = 'Muito bem! Você tem um bom conhecimento geral.'
     }   else if (bigNinetySmallerHundred){
         messagePoints.textContent = 'Parabéns! Você é um especialista em assusntos gerais!'
-    }
+    }   else if (smallerZero){
+        messagePoints.textContent = 'Você não acertou nenhuma questão? Que tal tentar novamente?'
+    }    
 });
 
 // Evento de  click que fecha a popup.
@@ -91,9 +94,3 @@ buttonPopup.addEventListener('click', () => {
 
     section.classList.add('d-none');
 })
-
-
-
-
-
-
