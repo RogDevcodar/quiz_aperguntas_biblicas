@@ -117,7 +117,7 @@ body {
 }
 
 fieldset {
-    border: 3px double #3454B4;
+    border: 1px dashed #3454B4;
 }
 
 #container-form {
@@ -201,6 +201,7 @@ footer {
     margin: 0 auto;
     left: 0;
     right: 0;
+    top: 30px;
     
 }
 
