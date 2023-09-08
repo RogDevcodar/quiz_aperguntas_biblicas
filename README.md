@@ -1,4 +1,4 @@
-# quiz_assuntos_gerais
+# quiz_perguntas_bíblicas
 Clique no link para acessar o Quiz:
 http://quiz.rogdevcodar.com.br
 
