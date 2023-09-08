@@ -21,9 +21,9 @@
     position: relative;
     display: flex;
     background: #D5F4FF;
-    width: 100%;
+    width: 90%;
     max-width: 500px;
-    height: 250px;
+    height: 200px;
     border: 5px solid #FFF;
     margin: 10% auto;
     border-radius: 10px;
@@ -39,20 +39,20 @@
 /*RESULTADO EM PORCENTAGEM DA POPUP*/
 .popup-result {
     text-align: center;
-    font-size: 20px;
+    font-size:17px;
     text-shadow: 1px 1px 1px #47474f;
-    color: #0000CC;
+    color: #2506f0;
 }
 strong {
     font-size: 40px;
     text-shadow: 2px 2px 2px #171515;
-    color: #3454B4;
+    color: #2506f0;
 }
 
 .popup-avaliacao {
     text-align: center;
     width: 100%;
-    background: #5C5C9E;
+    background: #5858e1;
     padding: 6px;
     color: #FFF;
     box-shadow: 2px 2px 4px #171515;
@@ -98,22 +98,26 @@ strong {
 
 }
 
-
 .img-topo {
     width: 100%;
 }
 
 body {
-    background-image: linear-gradient(#a1a1e6, #FFF);
+    background-image: linear-gradient(#deeaf2, #FFF);
 
 }
 
 
 .h2-subTitle {
-    text-align: center;
+    text-align: left;
     margin: 20px;
     color: #000068;
     text-shadow: 1px 1px 2px #fff;
+    font-size: 20px;
+}
+
+fieldset {
+    border: 3px double #3454B4;
 }
 
 #container-form {
@@ -142,11 +146,16 @@ body {
 
 .inputs {
    margin-bottom: 20px;
-   
+   appearance: none;
+   border: 1px solid #4a4abf;
+   padding: 0.6rem;
+   border-radius: 50%;
+   background-color: #ddebf4;
+   cursor: pointer;
 }
 
-#perg1 {
-   border: none;
+.inputs:checked {
+   background-image: radial-gradient(#4a4abf 45%, white 10%);
  }
 
 .btn-inputs {
@@ -183,6 +192,7 @@ footer {
 
 .resposta-bottom {
     color: red;
+    font-size: 12px;
 }
 
 .img-devCodar {
@@ -211,12 +221,12 @@ span {
     }
     .label-respostas {
         gap: 6px;
-        font-size: 12px;
+        font-size: 13px;
         
     }
     .img-devCodar {
         width: 60px;
-        top: 20px;
+        top: 30px;
     }
     .footer-p {
         font-size: 12px;
@@ -231,7 +241,7 @@ span {
 @media screen and (max-width: 480px) {
     .h2-subTitle {
         text-shadow: 1px 1px 2px #fff;
-        font-size: 15px;
+        font-size: 13px;
     }
     .perguntas-p {
         font-size: 12px;
@@ -240,12 +250,12 @@ span {
     }
     .label-respostas {
         gap: 5px;
-        font-size: 10px;
+        font-size: 12px;
         
     }
     .img-devCodar {
         width: 50px;
-        top: 30px;
+        top: 40px;
     }
     .footer-p {
         font-size: 10px;
