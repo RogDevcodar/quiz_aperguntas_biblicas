@@ -1,107 +1,89 @@
-//Referenciamento do formulário
-const form = document.querySelector('.form-container');
+const divClosedPopup = document.querySelector('.closed-popup');
+const divBackgroundEsmaecido = document.querySelector('.backgroundEsmaecido');
+const popupResultP = document.querySelector('.popup-result');
+const popupAvaliacao = document.querySelector('.popup-avaliacao');
 
-//Referenciamento da div da score
-const divScore = document.querySelector('.divScore');
 
-//Referenciamento do segundo parágrafo da popup
-const messagePoints = document.querySelector('.message-points');
-//Referenciamento do terceiro parágrafo das respostas da popup
-const paragraphRespostas = document.querySelector('.respostas');
+//RESPOSTAS CORRETAS
+const arrayResposts = ['C', 'D', 'C', 'B', 'D', 'B', 'D', 'B', 'D', 'B'];
+const form = document.querySelector('#container-form');
 
-//Referenciamento da tela de fundo acizentada da popup
-const section = document.querySelector('.background-popup');
-
-//Referenciamento do botão de popup
-const buttonPopup = document.querySelector('.button-popup');
-
-//Array com as respostas corretas
-const arrayAnswersCorrect = ['B', 'A', 'D', 'B', 'B', 'B', 'A', 'A', 'D', 'A'];
-
-//Evento de submit do botão
 form.addEventListener('submit', event => {
-    event.preventDefault(); //Evita que a página seja carregada ao clicar no botão.
-    scrollTo(0, 0);        //Ao clicar no botão a página retorna ao eixo x(0) e y(0).
-    
-
-//Consts contendo as mensagens que avalia as respostas do usuário.
-console.log(form.flexRadioDefault1.value);
-
-    //Array com os checkeds dos inputs clicados pelo usuário.
-    const arrayCheckedUsers = [
-        form.flexRadioDefault1.value,
-        form.flexRadioDefault2.value,
-        form.flexRadioDefault3.value,
-        form.flexRadioDefault4.value,
-        form.flexRadioDefault5.value, 
-        form.flexRadioDefault6.value, 
-        form.flexRadioDefault7.value, 
-        form.flexRadioDefault8.value, 
-        form.flexRadioDefault9.value, 
-        form.flexRadioDefault10.value];
-
-//lets do contador da pontuação.
+    event.preventDefault();
     let score = 0;
-//lets do contador da animação da pontuação.
-    let countPoints = 0;    
+    let counter = 0; 
 
-//Const referente ao forEach que itera pelo array 'arrayCheckedUsers'.  
-const sumScore = (arrayCheckedUser, index) => {
-    if (arrayCheckedUser === arrayAnswersCorrect[index]) {
+const inputResposts = [   
+    event.target.perg1.value,
+    event.target.perg2.value,
+    event.target.perg3.value,
+    event.target.perg4.value,
+    event.target.perg5.value,
+    event.target.perg6.value,
+    event.target.perg7.value,
+    event.target.perg8.value,
+    event.target.perg9.value,
+    event.target.perg10.value,
+];
+
+scrollPage();
+
+    inputResposts.forEach ((correct, index) => {
+        if (correct === arrayResposts[index]) {
         score += 10;
-    }
-}
-//forEach da const sumScore
-arrayCheckedUsers.forEach(sumScore)
-
-//Ao clicar no submit a classe d-none é removida para o score ser exibido na popup.
-section.classList.remove('d-none');
-paragraphRespostas.innerHTML = `<b>Respostas:</b> <b>1.</b> b) | <b>2.</b> a) | <b>3.</b> d) | <b>4.</b> b) | <b>5.</b> b) | <b>6.</b> b) | <b>7.</b> a) | <b>8.</b> a) | <b>9.</b> d) | <b>10.</b> a)`;
-
-// Animação da pontuação do quiz
-    const timerCount = setInterval(() => {
-                   
-        if (countPoints === score) {
-        clearInterval(timerCount); // Para a animação ao atingir a pontuação do usuário.
-    }
-        divScore.querySelector('span').textContent = `${countPoints}%`;
-        countPoints++;
-    },10)  
-
-//Consts da condicional de avaliação das respostas
-const smallerZero = score < 10;
-const smallerOrEqualThirty = score >= 10 && score <= 30;
-const bigThirtySmallerSixty = score > 30 && score <= 60;
-const bigSixtySmallerNinety = score > 60 && score <= 90;
-const bigNinetySmallerHundred = score > 90 && score <= 100;
-
-//Condicional de avaliação das respostas
-    if (smallerZero) {
-        messagePoints.textContent = 'Você não acertou nenhuma questão? Que tal tentar novamente?'
-        paragraphRespostas.style.display = 'none';
-    }    else if (smallerOrEqualThirty) {
-        messagePoints.textContent = 'Precisa estudar mais! Mas com esforço você consegue.'
-        paragraphRespostas.style.display = 'block';
-    }   else if (bigThirtySmallerSixty) {
-        messagePoints.textContent = 'Não está mal, mas ainda há espaço para melhorar.'
-        paragraphRespostas.style.display = 'block';
-    }   else if (bigSixtySmallerNinety) {
-        messagePoints.textContent = 'Muito bem! Você tem um bom conhecimento geral.'
-        paragraphRespostas.style.display = 'block';
-    }   else if (bigNinetySmallerHundred){
-        messagePoints.textContent = 'Parabéns! Você é um especialista em assusntos gerais!'
-        paragraphRespostas.style.display = 'block';
     }   
-});
+      
+    })
 
-// Evento de  click que fecha a popup.
-buttonPopup.addEventListener('click', () => {
+    const timer = setInterval(() => {
 
-    section.classList.add('d-none');
+        if (score === counter) {
+            clearInterval(timer);
+        }
+        popupResultP.innerHTML = `Você acertou <strong>${counter}%</strong> das perguntas!`
+        counter++;
+    }, 10)
+
+        if (score === 0) {
+        popupAvaliacao.textContent = 'Errou todas ou não clicou nas opções? Tente de novo!'  
+         
+    } else if (score >= 10 && score <= 30) {
+        popupAvaliacao.textContent = 'Que tal tentar melhorar sua pontuação?'
+    
+    } else if (score > 30 && score <= 60) {
+        popupAvaliacao.textContent = 'Não está mal, mas ainda há espaço para melhora.'
+    
+    } else if (score > 60 && score <= 90) {
+        popupAvaliacao.textContent = 'Muito bem! Você tem um bom conhecimento da bíblia.'
+    
+    } else if (score === 100) {
+        popupAvaliacao.textContent = 'Parabéns! Seu conhecimento da bíblia é excelente!'
+    }
+    
 })
 
+//EVENTO QUE FECHA O BOTÃO X DA POPUP
+divClosedPopup.addEventListener('click', () => {
 
+    divBackgroundEsmaecido.style.display = 'none';
 
+});
 
+const btnPopup = document.querySelector('.btn-popup');
+const respostaBottomP = document.querySelector('.resposta-bottom-p');
 
+//BOTÃO QUE ACESSA AS RESPOSTAS DA POPUP
+    btnPopup.addEventListener('click', () => {
+    
+    divBackgroundEsmaecido.style.display = 'none';
+    scrollTo(0, 1800);
+    respostaBottomP.innerHTML = '<b>Respostas:</b> <b>1.</b>(C), <b>2.</b>(D), <b>3.</b>(C), <b>4.</b>(B), <b>5.</b>(D), <b>6.</b>(B), <b>7.</b>(D), <b>8.</b>(B), <b>9.</b>(D), <b>10.</b>(B)'
+});
 
+//FUNÇÃO QUE ROLA PÁGINA PARA O TOPO E EXIBE A POPUP (DECLARADA LINHA - 25)
+const scrollPage = () => {
+    
+    scrollTo(0, 0)   
+    divBackgroundEsmaecido.style.display = 'block';
+
+};
