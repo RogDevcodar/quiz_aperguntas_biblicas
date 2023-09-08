@@ -1,327 +1,349 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Quiz</title>
 </head>
-<body class="background-body">
-     <p class="text-h1 text-center text-white p-2">QUIZ DE CONHECIMENTOS GERAIS</p>
-  
- <!--INÍCIO DO POPUP-->   
-    <section class="background-popup d-none">
-    <div class="divScore bg-white container-popup">
-        <p class="message1-popup text-center text-score">Você acertou<span>0%</span>das perguntas</p>
-        <p class="message-points h4 p-4 text-center text-blue"></p>
-        <p class="respostas"></p>
-        <button class="button-popup d-grid gap-2 col-2 mx-auto btn">Fechar</button>
-    </div>
-    </section>
- <!--FIM DO POPUP-->  
- 
-     <h2 class="sub-titulo text-center p-3">Teste seus conhecimentos em 10 perguntas!</h2>
-    <br>
-<!--INÍCIO DO FORM-->
-<form class="form-container px-5">
-    <p class="h5">1. Qual é o maior planeta do Sistema Solar?</p>
-    <br>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="name1" id="flexRadioDefault1" value="A">
-        <label class="form-check-label" for="flexRadioDefault">
-          a ) Marte
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="name1" id="flexRadioDefault1" value="B">
-        <label class="form-check-label" for="flexRadioDefault">
-          b ) Júpter
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="name1" id="flexRadioDefault1" value="C">
-        <label class="form-check-label" for="flexRadioDefault">
-          c ) Terra
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="name1" id="flexRadioDefault1" value="D" >
-        <label class="form-check-label" for="flexRadioDefault">
-          d ) Saturno
-        </label>
-      </div>
 
-      <br>
-
-      <p class="h5">2. Qual é o país conhecido como "Terra do Sol Nascente"?</p>
-      <br>
-      <div class="form-check">
-          <input class="form-check-input" type="radio" name="name2" id="flexRadioDefault2" value="A">
-          <label class="form-check-label" for="flexRadioDefault1">
-            a ) Japão
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="name2" id="flexRadioDefault2" value="B">
-          <label class="form-check-label" for="flexRadioDefault1">
-            b ) China
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="name2" id="flexRadioDefault2" value="C">
-          <label class="form-check-label" for="flexRadioDefault1">
-            c ) Coréia do Sul
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="name2" id="flexRadioDefault2" value="D">
-          <label class="form-check-label" for="flexRadioDefault1">
-            d ) Índia
-          </label>
-        </div>
-  
-        <br>
-
-        <p class="h5">3. Quem pintou a famosa obra conhecida como Mona Lisa?</p>
-        <br>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="name3" id="flexRadioDefault3" value="A">
-            <label class="form-check-label" for="flexRadioDefault2">
-              a ) Michelangelo
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="name3" id="flexRadioDefault3" value="B">
-            <label class="form-check-label" for="flexRadioDefault2">
-              b ) Vicent van Gogh
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="name3" id="flexRadioDefault3" value="C">
-            <label class="form-check-label" for="flexRadioDefault2">
-              c ) Pablo Picasso
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="name3" id="flexRadioDefault3" value="D">
-            <label class="form-check-label" for="flexRadioDefault2">
-              d ) Leonardo da Vince
-            </label>
-          </div>
-    
-          <br>
-
-          <p class="h5">4. Qual é a capital do Canadá?</p>
-          <br>
-          <div class="form-check">
-              <input class="form-check-input" type="radio" name="name4" id="flexRadioDefault4" value="A">
-              <label class="form-check-label" for="flexRadioDefault3">
-                a ) Toronto
-              </label>
+<body>
+    <div class="backgroundEsmaecido">
+        <div class="area-popup">
+            <div class="closed-popup">x</div>
+            <div class="contentPopup">
+                <p class="popup-result"></p>
+                <p class="popup-avaliacao"></p>
+                <button class="btn-popup">Ver respostas</button>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="name4" id="flexRadioDefault4" value="B">
-              <label class="form-check-label" for="flexRadioDefault3">
-                b ) Ottawa
-              </label>
+        </div>
+    </div>    
+    <main class="main-background">
+        <header>
+            <div>
+                <img class="img-topo" src="/img_quiz.png" alt="Quiz bíblico">
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="name4" id="flexRadioDefault4" value="C">
-              <label class="form-check-label" for="flexRadioDefault3">
-                c ) Vancouver
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="name4" id="flexRadioDefault4" value="D">
-              <label class="form-check-label" for="flexRadioDefault34">
-                d ) Montreal
-              </label>
-            </div>
-      
-            <br>
+            <h2 class="h2-subTitle">Responda cada pergunta, e no final, você receberá a pontuação com base em suas respostas.</h2>
+        </header>
+        <form id="container-form">
+            <div class="perguntas">
+                <div>
+                    <p class="perguntas-p">1. Qual foi o primeiro milagre que Jesus relizou?</p>
+                    <section class="container-input">
+                    <div>
+                        <label for="label1" class="label-respostas">
+                            <input class="inputs" type="radio" id="perg1" name="name1" value="A">
+                            a) Alimentar 5.000 pessoas com 5 pães e dois peixes
+                        </label>
+                    </div>
+                    <div>
+                        <label for="label1" class="label-respostas">
+                            <input class="inputs" type="radio" id="perg1" name="name1" value="A">
+                            b) Curar um leproso
+                        </label>
+                    </div>
+                    <div>
+                        <label for="label1" class="label-respostas">
+                            <input class="inputs" type="radio" id="perg1" name="name1" value="C">
+                            c) Transformar água em vinho
+                        </label>
+                    </div>
+                    <div>
+                        <label for="label1" class="label-respostas">
+                            <input class="inputs" type="radio" id="perg1" name="name1" value="A">
+                            d) Ressuscitar Lázaro
+                        </label>
+                    </div>
+                </div>
+                </section>
+                <div class="perguntas">
+                    <div>
+                        <p class="perguntas-p">2. Três dos quatro Rios que circundavam o Jardim do Éden eram: 1 - "Pisom", 3 - "Hídequel" e 4 - "Eufrates". Qual o nome do segundo Rio?</p>
+                        <section class="container-input">
+                        <div>
+                            <label for="label2" class="label-respostas">
+                                <input class="inputs" type="radio" id="perg2" name="name2" value="A">
+                                a) Nilo
+                            </label>
+                        </div>
+                        <div>
+                            <label for="label2" class="label-respostas">
+                                <input class="inputs" type="radio" id="perg2" name="name2" value="A">
+                                b) Siom
+                            </label>
+                        </div>
+                        <div>
+                            <label for="label2" class="label-respostas">
+                                <input class="inputs" type="radio" id="perg2" name="name2" value="A">
+                                c) Jordão
+                            </label>
+                        </div>
+                        <div>
+                            <label for="label2" class="label-respostas">
+                                <input class="inputs" type="radio" id="perg2" name="name2" value="D">
+                                d) Giom
+                            </label>
+                        </div>
+                    </div>
+                </section>
+                    <div class="perguntas">
+                        <div> <!--Medo-Pérsia-->
+                            <p class="perguntas-p">3. Nome da quarta potência mundial registrada na profecia bíblica.</p>
+                            <section class="container-input">
+                            <div>
+                                <label for="label3" class="label-respostas">
+                                    <input class="inputs" type="radio" id="perg3" name="name3" value="A">
+                                    a) Grécia
+                                </label>
+                            </div>
+                            <div>
+                                <label for="label3" class="label-respostas">
+                                    <input class="inputs" type="radio" id="perg3" name="name3" value="A">
+                                    b) Assíria
+                                </label>
+                            </div>
+                            <div>
+                                <label for="label3" class="label-respostas">
+                                    <input class="inputs" type="radio" id="perg3" name="name3" value="C">
+                                    c) Medo-Pérsia
+                                </label>
+                            </div>
+                            <div>
+                                <label for="label3" class="label-respostas">
+                                    <input class="inputs" type="radio" id="perg3" name="name3" value="A">
+                                    d) Egito
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                        <div class="perguntas">
+                            <div>
+                                <p class="perguntas-p">4. Quantos anos Nóe tinha quando as águas do dilúvio desceram sobre a terra? </p>
+                                <section class="container-input">
+                                <div><!--600-->
+                                    <label for="label4" class="label-respostas">
+                                        <input class="inputs" class="inputs" type="radio" id="perg4" name="name4" value="A">
+                                        a) 150 anos
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="label4" class="label-respostas">
+                                        <input class="inputs" class="inputs" type="radio" id="perg4" name="name4" value="B">
+                                        b) 600 anos
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="label4" class="label-respostas">
+                                        <input class="inputs" class="inputs" type="radio" id="perg4" name="name4" value="A">
+                                        c) 120 anos
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="label4" class="label-respostas">
+                                        <input class="inputs" class="inputs" type="radio" id="perg4" name="name4" value="A">
+                                        d) 350 anos
+                                    </label>
+                                </div>
+                            </div>
 
-            <p class="h5">5. Qual é o metal químico cujo símbolo é "Fe" na tabela periódica?</p>
-            <br>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="name" id="flexRadioDefault5" value="A">
-                <label class="form-check-label" for="flexRadioDefault4">
-                  a ) Cobre
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="name5" id="flexRadioDefault5" value="B">
-                <label class="form-check-label" for="flexRadioDefault5=4">
-                  b ) Ferro
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="name5" id="flexRadioDefault5" value="C">
-                <label class="form-check-label" for="flexRadioDefault4">
-                 c ) Prata
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="name5" id="flexRadioDefault5" value="D" >
-                <label class="form-check-label" for="flexRadioDefault4">
-                  d ) Ouro
-                </label>
-              </div>
-        
-              <br>
-              <p class="h5">6. Quem foi o físico teórico responsável pela formulação da Teoria da Relatividade?</p>
-              <br>
-              <div class="form-check">
-                  <input class="form-check-input" type="radio" name="name6" id="flexRadioDefault6" value="A">
-                  <label class="form-check-label" for="flexRadioDefault5">
-                    a ) Isaac Newton
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="name6" id="flexRadioDefault6" value="B">
-                  <label class="form-check-label" for="flexRadioDefault5">
-                    b ) Albert Einstein
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="name6" id="flexRadioDefault6" value="C">
-                  <label class="form-check-label" for="flexRadioDefault5">
-                    c ) Galileu Galilei
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="name6" id="flexRadioDefault6" value="D">
-                  <label class="form-check-label" for="flexRadioDefault5">
-                    d ) Stephen Hawking
-                  </label>
-                </div>
-          
-                <br>
-                <p class="h5">7. Em qual continente está localizada a Floresta Amazônica?</p>
-                <br>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="name7" id="flexRadioDefault7" value="A">
-                    <label class="form-check-label" for="flexRadioDefault6">
-                      a ) Améria do Sul
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="name7" id="flexRadioDefault7" value="B">
-                    <label class="form-check-label" for="flexRadioDefault6">
-                      b ) África
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="name7" id="flexRadioDefault7" value="C">
-                    <label class="form-check-label" for="flexRadioDefault6">
-                      c ) América do Norte
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="name7" id="flexRadioDefault7" value="D">
-                    <label class="form-check-label" for="flexRadioDefault6">
-                      d ) Oceania
-                    </label>
-                  </div>
-            
-                  <br>
-                  <p class="h5">8. Qual é o maior órgão interno do corpo humano?</p>
-                  <br>
-                  <div class="form-check">
-                      <input class="form-check-input" type="radio" name="name8" id="flexRadioDefault8" value="A">
-                      <label class="form-check-label" for="flexRadioDefault7">
-                        a ) Fígado
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="name8" id="flexRadioDefault8" value="B">
-                      <label class="form-check-label" for="flexRadioDefault7">
-                        b ) Pulmão
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="name8" id="flexRadioDefault8" value="C">
-                      <label class="form-check-label" for="flexRadioDefault7">
-                        c ) Coração
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="name8" id="flexRadioDefault8" value="D">
-                      <label class="form-check-label" for="flexRadioDefault7">
-                        d ) Cérebro
-                      </label>
-                    </div>
-              
-                    <br>
-                    <p class="h5">9. Qual é capital da Austrália?</p>
-                    <br>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="name9" id="flexRadioDefault9" value="A">
-                        <label class="form-check-label" for="flexRadioDefault8">
-                          a ) Sydney
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="name9" id="flexRadioDefault9" value="B">
-                        <label class="form-check-label" for="flexRadioDefault8">
-                          b) Melbourne
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="name9" id="flexRadioDefault9" value="C">
-                        <label class="form-check-label" for="flexRadioDefault8">
-                          c ) Brisbane
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="name9" id="flexRadioDefault9" value="D">
-                        <label class="form-check-label" for="flexRadioDefault8">
-                          d) Camberra
-                        </label>
-                      </div>
-                
-                      <br>
+                        </section>
+                        <div class="perguntas">
+                            <div><!--7-->
+                                <p class="perguntas-p">5. Qual o número total de congregações listadas nos capítulos 2 e 3 de Apocalipse? </p>
+                                <section class="container-input">
+                                <div>
+                                    <label for="label5" class="label-respostas">
+                                        <input class="inputs" type="radio" id="perg5" name="name5" value="A">
+                                        a) 5
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="label5" class="label-respostas">
+                                        <input class="inputs" type="radio" id="perg5" name="name5" value="A">
+                                        b) 12
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="label5" class="label-respostas">
+                                        <input class="inputs" type="radio" id="perg5" name="name5" value="A">
+                                        c) 10
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="label5" class="label-respostas">
+                                        <input class="inputs" type="radio" id="perg5" name="name5" value="D">
+                                        d) 7
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+                            <div class="perguntas">
+                                <div>
+                                    <p class="perguntas-p">6. Por quanto tempo os israelitas moraram na terra do Egito? </p>
+                                    <section class="container-input">
+                                    <div><!--215 anos-->
+                                        <label for="label6" class="label-respostas"> 
+                                            <input class="inputs" type="radio" id="perg6" name="name6" value="A">
+                                            a) 430 anos
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="label6" class="label-respostas">
+                                            <input class="inputs" type="radio" id="perg6" name="name6" value="B">
+                                            b) 215 anos
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="label6" class="label-respostas">
+                                            <input class="inputs" type="radio" id="perg6" name="name6" value="A">
+                                            c) 130 anos
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="label6" class="label-respostas">
+                                            <input class="inputs" type="radio" id="perg6" name="name6" value="A">
+                                            d) 480 anos
+                                        </label>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="perguntas">
+                                <div>
+                                    <p class="perguntas-p">7. Quantos querubins de ouro haviam sobre a tampa da Arca do Pacto?</p>
+                                    <section class="container-input">
+                                    <div><!--2-->
+                                        <label for="label7" class="label-respostas">
+                                            <input class="inputs" type="radio" id="perg7" name="name7"  value="A">
+                                            a) 1 querubim
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="label7" class="label-respostas">
+                                            <input for="label7" class="inputs" type="radio" id="perg7" name="name7" value="A">
+                                            b) 3 querubins
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="label7" class="label-respostas">
+                                            <input class="inputs" type="radio" id="perg7" name="name7" value="A">
+                                            c) Nenhum
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="label7" class="label-respostas">
+                                            <input class="inputs" type="radio" id="perg7" name="name7" value="D">
+                                            d) 2 querubins
+                                        </label>
+                                    </div>
+                                </div>
+                            </section>
+                                <div class="perguntas">
+                                    <div>
+                                        <p class="perguntas-p">8. Nome do General Romano que subtamente retirou suas tropas do cerco que havia feito em Jerusalém no ano 66 A.C.</p>
+                                        <section class="container-input">
+                                        <div><!--2-->
+                                            <label for="label8" class="label-respostas">
+                                                <input class="inputs" type="radio" id="perg8" name="name8" value="A">
+                                                a) Ptolomeu Lagos
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label for="label8" class="label-respostas">
+                                                <input class="inputs" type="radio" id="perg8" name="name8" value="B">
+                                                b) Céstio Galo
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label for="label8" class="label-respostas">
+                                                <input class="inputs" type="radio" id="perg8" name="name8" value="A">
+                                                c) Nabucodonosor
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label for="label8" class="label-respostas">
+                                                <input class="inputs" type="radio" id="perg8" name="name8" value="A">
+                                                d) Tito
+                                            </label>
+                                        </div>
+                                    </div>
+                                </section>
+                                    <div class="perguntas">
+                                        <div>
+                                            <p class="perguntas-p">9. Nome da viúva de Saul que ficou por cerca de cinco a seis meses espantando pássaros e animais selvagens dos cadáveres de seus filhos.</p>
+                                            <section class="container-input">
+                                            <div><!--Rispa-->
+                                                <label for="label9" class="label-respostas">
+                                                    <input class="inputs" type="radio" id="perg9" name="name9" value="A">
+                                                    a) Jade
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label for="label9" class="label-respostas">
+                                                    <input class="inputs" type="radio" id="perg9" name="name9" value="A">
+                                                    b) Débora
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label for="label9" class="label-respostas">
+                                                    <input class="inputs" type="radio" id="perg9" name="name9" value="A">
+                                                    c) Jael
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label for="label9" class="label-respostas">
+                                                    <input class="inputs" class="inputs" type="radio" id="perg9" name="name9" value="D">
+                                                    d) Rispa
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                        <div class="perguntas">
+                                            <div>
+                                                <p class="perguntas-p">10. Rei que foi escondido quando bebê para não ser morto pela rainha Atalia .</p>
+                                                <section class="container-input">
+                                                <div><!--Jeoás-->
+                                                    <label  for="label10" class="label-respostas">
+                                                        <input class="inputs" type="radio" id="perg10" name="name10" value="A">
+                                                        a) Josias
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label  for="label10" class="label-respostas">
+                                                        <input class="inputs" type="radio" id="perg10" name="name10" value="B">
+                                                        b) Jeoás
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label  for="label10" class="label-respostas">
+                                                        <input class="inputs" type="radio" id="perg10" name="name10" value="A">
+                                                        c) Jeorão
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label  for="label10" class="label-respostas">
+                                                        <input class="inputs" type="radio" id="perg10" name="name10" value="A">
+                                                        d) Jeoiada
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </section>
+                                            
+                                            <div>
+                                                <input class="btn-inputs" type="submit" value="Enviar respostas">
+                                            <br>
+                                            </div>
+                                            
+                                        </form>
+                    <div class="resposta-bottom">
+                        <p class="resposta-bottom-p"></p>
+                    </div>                                   
+    </main>
+    <footer>
+        <p class="footer-p"><span>Desenvolvido por: Rogério Assis &copy; Setembro de 2023</span></p>
+        <div><img class="img-devCodar" src="/rogdevcodar.png" alt="Logo - rogDev-codar"></div>
+    </footer>
 
-                      <p class="h5">10. Quem escreveu a peça teatral "Romeu e Julieta"?</p>
-                      <br>
-                      <div class="form-check">
-                          <input class="form-check-input" type="radio" name="name10" id="flexRadioDefault10" value="A">
-                          <label class="form-check-label" for="flexRadioDefault9">
-                            a ) Willian Shakespeare
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="name10" id="flexRadioDefault10" value="B">
-                          <label class="form-check-label" for="flexRadioDefault9">
-                            b ) George Bernard Shaw
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="name10" id="flexRadioDefault10" value="C">
-                          <label class="form-check-label" for="flexRadioDefault9">
-                            c ) Oscar Wilde
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="name10" id="flexRadioDefault10" value="D">
-                          <label class="form-check-label" for="flexRadioDefault9">
-                            d ) Arthur Miller
-                          </label>
-                        </div>
-                        <br>
-            <div class="d-grid mx-auto">
-               <button class="button-form btn">Enviar respostas</button>
-            </div>  
-<!--FINAL DO FORM-->               
-        </form>
-<!--RODAPÉ--> 
-<footer>
-     <p class="p-4 text-center text-black fst-italic">Desenvolvido por Rogério Assis copyright &copy; - july 2023</p>
-     <img class="logo" src="rog_devcodar.png" alt="Logo - rogDev-codar">
-</footer>
-
-<!--JAVASCRIPT--> 
     <script src="app.js"></script>
 </body>
 </html>
-
