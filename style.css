@@ -2,442 +2,260 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial;
 }
 
-.background-body {
-    background: linear-gradient(45deg, rgb(128, 178, 128), rgb(214, 255, 152));
-}
+/*ÁREA DA POPUP*/
 
-
-/*INÍCIO POPUP*/
-span {
-    font-size: 40px;
-    margin: 20px;
-    font-weight: bold;
-}
-
-.respostas {
-    
-    font-size: 12px;
-    margin: auto;
-    text-align: center;
-}
-
-.background-popup {
+.backgroundEsmaecido {
+    display: none;
     background: rgb(0, 0, 0, 0.8);
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
 }
 
-.container-popup {
-    display: block;
-    justify-content: center;
-    /* position: relative; */
-    margin: 12% auto;
-    width: 80%;
-    max-width: 550px;
-    height: 300px;
-    border-radius: 10px;
-    border: 8px solid #FFF;
-    padding: 5px;
-    background: linear-gradient(45deg, rgb(234, 254, 203), rgb(214, 255, 152));
-}
-
- .button-popup {
+.area-popup {
     position: relative;
-    bottom: -50px;
-    background-color: #006400;
-    color: #FFF;
+    display: flex;
+    background: #D5F4FF;
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    border: 5px solid #FFF;
+    margin: 10% auto;
+    border-radius: 10px;
 }
 
-.button-popup:hover {
-    background: #128912;
+.contentPopup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+        
+}
+/*RESULTADO EM PORCENTAGEM DA POPUP*/
+.popup-result {
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #47474f;
+    color: #0000CC;
+}
+strong {
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #171515;
+    color: #3454B4;
+}
+
+.popup-avaliacao {
+    text-align: center;
+    width: 100%;
+    background: #5C5C9E;
+    padding: 6px;
     color: #FFF;
+    box-shadow: 2px 2px 4px #171515;
+}
+
+.btn-popup {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    background: #0000CC;
+    font-size: 15px;
+    color: #FFF;
+    box-shadow: 2px 2px 4px #171515;
+}
+
+.btn-popup:hover {
+    background: #000068;
+    transition: .5s;
+}
+
+.closed-popup {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    background: #D5F4FF;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+
+}
+.closed-popup:hover {
+    background: crimson;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #FFF;
+    
+
+}
+
+
+.img-topo {
+    width: 100%;
+}
+
+body {
+    background-image: radial-gradient(#5C5C9E, #FFF);
+
+}
+
+
+.h2-subTitle {
+    text-align: center;
+    margin: 20px;
+    color: #000068;
+    text-shadow: 2px 2px 4px #fff;
+}
+
+#container-form {
+    margin: 30px;
+}
+
+.perguntas-p {
+    font-size: 18px;
+    margin: 20px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.container-input {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
     
 }
 
-.text-score {
-    position: relative;
-    top: 20px;
+.label-respostas {
+    display: flex;
+    gap: 10px;
+    
 }
 
-/*FIM POPUP*/
-
-.text-h1{
-    text-shadow: 1px 1px 4px #000;
-    box-shadow: 0 6px 10px 0 #000;
-    background: linear-gradient(45deg, rgb(0, 75, 0), rgb(0, 191, 0));
-    font-size: 40px;
-    padding: 40px;
+.inputs {
+   margin-bottom: 20px;
+   
 }
 
-.sub-titulo {
-   color: #000;
-   font-size: 25px;
+#perg1 {
+   border: none;
+ }
+
+.btn-inputs {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    color: #FFF;
+    background: #0000CC;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
-.form-check-label {
-    color: #000;
-}
-
-.h5 {
-    color: #000;
-    font-size: 20px;
-}
-
-.form-check-input {
-    border: 1px solid #bdb5b5;
+.btn-inputs:hover {
+    background: #000068;
+    transition: .5s;
 }
 
 footer {
     position: relative;
+    background: #5C5C9E;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #FFF;
+    
 }
 
-.logo {
-    width: 100px;
+.footer-p {
+    color: #ebdfdf;
+}
+
+.resposta-bottom {
+    color: red;
+}
+
+.img-devCodar {
     position: absolute;
+    width: 70px;
+    margin: 0 auto;
     left: 0;
     right: 0;
-    margin: auto;
     
-}
-
-.message1-popup {
-    position: relative;
-    top: 20px;
-    font-size: 25px;
-}
-
-.message-points {
-    position: relative;
-    margin: 5px;
-    font-size: 18px;
-    top: 5px;
-}
-
-.button-form {
-    background-color: #006400;
-    color: #FFF;
-    width: 200px;
-    margin: auto;
-    
-
-}
-.button-form:hover {
-    background: #128912;
-    color: #FFF;
-    
-}
-
-@media screen and (max-width: 956px) {
-
-   
-    .text-h1{
-        font-size: 35px;
-    }
-
-    .h5 {
-        color: #000;
-        font-size: 15px;
-    }
-
-    .form-check-label {
-        color: #000;
-        font-size: 13px;
-    }
-    
-}
-
-@media screen and (max-width: 586px) {
-/* MAX WIDTH = TELAS MENORES QUE ALGUMA*/
-
-.text-h1{
-    font-size: 30px;
-}
-
-.sub-titulo {
-    color: #000;
-    font-size: 25px;
- }
-
- .h5 {
-    color: #000;
-    font-size: 15px;
-}
-
-.form-check-label {
-    color: #000;
-    font-size: 13px;
-}
-
-.form-check-label {
-    color: #000;
-    font-size: 13px;
-}
-
-.message1-popup {
-    position: relative;
-    top: -5px;
-    font-size: 14px;
-}
-.container-popup {
-    display: block;
-    justify-content: center;
-    /* position: relative; */
-    margin: 12% auto;
-    width: 80%;
-    max-width: 550px;
-    height: 300px;
-    border-radius: 10px;
-    border: 5px solid #FFF;
-    padding: 5px;
-}
-
-.respostas {
-    top: 300px;
-    font-size: 12px;
-    margin: auto;
-    text-align: center;
 }
 
 span {
-    font-size: 40px;
-    margin: 5px;
-    font-weight: bold;
+    font-style: italic;
+        
 }
 
-
-
-.message-points {
-    position: relative;
-    margin: 5px;
-    font-size: 15px;
-    top: 5px;
-}
-
-.button-popup {
-    position: relative;
-    bottom: -40px;
-    width: 80px;
-    padding: 5px;
-    font-size: 12px;
-    
-}
-
-.button-form {
-    background-color: #006400;
-    color: #FFF;
-    width: 200px;
-   
-}
-
-}
-
-@media screen and (max-width:527px) {
-    /* MAX WIDTH = TELAS MENORES QUE ALGUMA*/
-
-    .text-h1 {
-        text-shadow: 1px 1px 2px #000;
-        box-shadow: 0 6px 8px 0 #000;
-        background: linear-gradient(45deg, rgb(0, 75, 0), rgb(0, 191, 0));
-        font-size: 35px;
-        padding: 40px;
+@media screen and (max-width: 768px) {
+    .h2-subTitle {
+        text-shadow: 2px 2px 4px #fff;
+        font-size: 18px;
     }
-   
-
-    .h5 {
-        color: #000;
+    .perguntas-p {
         font-size: 15px;
-    }
-
-    .message1-popup {
-        position: relative;
-        top: -5px;
-        font-size: 14px;
-    }
-
-    .form-check-label {
-        color: #000;
-        font-size: 13px;
-    }
-    
-    span {
-        font-size: 35px;
         margin: 20px;
-        font-weight: bold;
-    }
-    
-    .container-popup {
-        position: relative;
-        margin: 12% auto;
-        width: 90%;
-        max-width: 550px;
-        height: 220px;
-        border-radius: 10px;
-        border: 5px solid #FFF;
-        padding: 12px;
-    }
-
-    .respostas {
         
-        font-size: 10px;
-        margin: -20px auto;
-        text-align: center;
     }
-
-    .message-points {
-        position: relative;
-        margin: 2px;
-        font-size: 13px; /*ALTERADO*/
-        top: -20px;
-    }
- 
-
-    .button-popup {
-        position: relative;
-        bottom: -40px;
-        width: 80px;
-        padding: 5px;
+    .label-respostas {
+        gap: 6px;
         font-size: 12px;
- } 
-
-
- .h5 {
-    font-size: 15px;
- }
-
- .sub-titulo {
-    color: #000;
-    font-size: 25px;
- }
- .button-form {
-    background-color: #006400;
-    color: #FFF;
-    width: 200px;
-   
-}
-.text-center {
-    font-size: 14px;
-}
-
-}
-
-@media screen and (max-width:480px) {
-
-    .text-h1{
-        text-shadow: 1px 1px 2px #000;
-        box-shadow: 0 4px 6px 0 #000;
-        background: linear-gradient(45deg, rgb(0, 75, 0), rgb(0, 191, 0));
-        font-size: 35px;
-        padding: 40px;
-    }
-    .h5 {
-        color: #000;
-        font-size: 13px;
-    }
-
-       .message1-popup {
-        position: relative;
-        top: -5px;
-        font-size: 14px;
-    }
-
-    .form-check-label {
-        color: #000;
-        font-size: 13px;
-    }
-
-    span {
-        font-size: 35px;
-        margin: 20px;
-        font-weight: bold;
-    }
-
-    .respostas {
         
-        font-size: 8px;
-        margin: -20px auto;
-        text-align: center;
     }
-    .sub-titulo {
-        color: #000;
-        font-size: 17px;
-     }
-     .button-form {
-        background-color: #006400;
-        color: #FFF;
-        width: 150px;
-        font-size: 14px;;
+    .img-devCodar {
+        width: 60px;
+        top: 20px;
+    }
+    .footer-p {
+        font-size: 12px;
+    }
+    .btn-inputs {
+        border-radius: 6px;
+        font-size: 13px;
        
     }
-
-    .text-center {
-        font-size: 14px;
-    }
-
-    .message-points {
-        position: relative;
-        margin: 2px;
-        font-size: 10px; /*ALTERADO*/
-        top: -20px;
-    }
-
 }
 
-@media screen and (max-width:369px) {
-    .text-h1{
-        text-shadow: 1px 1px 2px #000;
-        box-shadow: 4 4px 6px 0 #000;
-        background: linear-gradient(45deg, rgb(0, 75, 0), rgb(0, 191, 0));
-        font-size: 35px;
-        padding: 40px;
+@media screen and (max-width: 480px) {
+    .h2-subTitle {
+        text-shadow: 1px 1px 2px #fff;
+        font-size: 15px;
     }
- 
-    .h5 {
-        color: #000;
-        font-size: 13px;
-    }
-
-    .form-check-label {
-        color: #000;
-        font-size: 13px;
-    }
-    .button-form {
-        background-color: #006400;
-        color: #FFF;
-        width: 150px;
-        font-size: 14px;
-            
-    }
-
-    .text-center {
-        font-size: 14px;
-    }
-    .message1-popup {
-        position: relative;
-        top: -5px;
-        font-size: 14px;
-    }
-    .sub-titulo {
-        color: #000;
-        font-size: 17px;
-     }
-
-     .button-popup {
-        position: relative;
-        bottom: -30px;
-        width: 80px;
-        padding: 5px;
+    .perguntas-p {
         font-size: 12px;
-    
- } 
- .message-points {
-    position: relative;
-    margin: 2px;
-    font-size: 10px; /*ALTERADO*/
-    top: -20px;
-}
+        margin: 10px;
+        
+    }
+    .label-respostas {
+        gap: 5px;
+        font-size: 10px;
+        
+    }
+    .img-devCodar {
+        width: 50px;
+        top: 30px;
+    }
+    .footer-p {
+        font-size: 10px;
+    }
+    .btn-inputs {
+        border-radius: 6px;
+        font-size: 11px;
+    }
+    .inputs {
+        margin-bottom: 10px;
+        
+     }
 }
