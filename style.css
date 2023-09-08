@@ -104,7 +104,7 @@ strong {
 }
 
 body {
-    background-image: radial-gradient(#5C5C9E, #FFF);
+    background-image: linear-gradient(#a1a1e6, #FFF);
 
 }
 
@@ -113,7 +113,7 @@ body {
     text-align: center;
     margin: 20px;
     color: #000068;
-    text-shadow: 2px 2px 4px #fff;
+    text-shadow: 1px 1px 2px #fff;
 }
 
 #container-form {
