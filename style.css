@@ -21,11 +21,11 @@
 .area-popup {
     position: relative;
     display: flex;
-    background: #D5F4FF;
+    background: #cad7ec;
     width: 90%;
     max-width: 500px;
     height: 200px;
-    border: 5px solid #afabee;
+    border: 5px solid #87afee;
     margin: 10% auto;
     border-radius: 10px;
     
@@ -50,7 +50,7 @@
 strong {
     font-size: 40px;
     text-shadow: 2px 2px 2px #171515;
-    color: #7567d4;
+    color: #73a2ee;
 }
 
 .popup-avaliacao {
@@ -94,6 +94,7 @@ strong {
     height: 20px;
     text-align: center;
     color: #FFF;
+    border-radius: 4px;
 }
 .closed-popup:hover {
     background: crimson;
