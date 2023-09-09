@@ -41,12 +41,12 @@
     text-align: center;
     font-size:17px;
     text-shadow: 1px 1px 1px #47474f;
-    color: #2506f0;
+    color: #2c1a9f;
 }
 strong {
     font-size: 40px;
     text-shadow: 2px 2px 2px #171515;
-    color: #2506f0;
+    color: #6652e8;
 }
 
 .popup-avaliacao {
@@ -66,14 +66,14 @@ strong {
     padding: 6px 10px;
     border-radius: 6px;
     border: none;
-    background: #0000CC;
+    background: #3f3fe2;
     font-size: 15px;
     color: #FFF;
     box-shadow: 2px 2px 4px #171515;
 }
 
 .btn-popup:hover {
-    background: #000068;
+    background: #2121bb;
     transition: .5s;
 }
 
@@ -117,6 +117,8 @@ body {
 }
 
 fieldset {
+    display: flex;
+    
     border: 1px dashed #3454B4;
 }
 
@@ -139,24 +141,35 @@ fieldset {
 }
 
 .label-respostas {
+    position: relative;
     display: flex;
-    gap: 10px;
+    margin-bottom: 10px;
+    left: 30px;
+    cursor: pointer;
     
 }
 
 .inputs {
-   margin-bottom: 20px;
-   appearance: none;
-   border: 1px solid #4a4abf;
-   padding: 0.6rem;
-   border-radius: 50%;
-   background-color: #ddebf4;
-   cursor: pointer;
+    position: absolute;
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+    top: -1.5px;
+    left: -30px;
+    appearance: none;
+    border: 1px solid #372fae;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    background: #deeaf2;
+    
 }
 
 .inputs:checked {
-   background-image: radial-gradient(#4a4abf 45%, white 10%);
- }
+    background-image: radial-gradient(#372fae 50%,  #fff 20%);
+}
+
+
 
 .btn-inputs {
     display: block;
@@ -192,7 +205,9 @@ footer {
 
 .resposta-bottom {
     color: red;
-    font-size: 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 30px;
 }
 
 .img-devCodar {
