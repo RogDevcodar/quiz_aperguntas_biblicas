@@ -45,7 +45,7 @@ scrollPage();
     }, 10)
 
         if (score === 0) {
-        popupAvaliacao.textContent = 'Opps! Tente de novo!'  
+        popupAvaliacao.textContent = 'Tente novamente!'  
          
     } else if (score >= 10 && score <= 30) {
         popupAvaliacao.textContent = 'Que tal tentar melhorar sua pontuação?'
