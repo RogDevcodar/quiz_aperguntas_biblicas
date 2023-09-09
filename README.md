@@ -1,4 +1,4 @@
-![image](https://github.com/RogDevcodar/quiz_aperguntas_biblicas/assets/129806513/a2f473c5-83b3-4348-83a6-8551f48721e4)
+![image](https://github.com/RogDevcodar/quiz_aperguntas_biblicas/assets/129806513/6dbe6301-6622-4282-bc9d-ec6a957c5280)
 
 # quiz_perguntas_bíblicas
 Clique no link para acessar o Quiz:
