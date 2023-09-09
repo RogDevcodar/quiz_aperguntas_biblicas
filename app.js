@@ -14,16 +14,16 @@ form.addEventListener('submit', event => {
     let counter = 0; 
 
 const inputResposts = [   
-    event.target.resp3.value,
-    event.target.resp8.value,
-    event.target.resp11.value,
-    event.target.resp14.value,
-    event.target.resp20.value,
-    event.target.resp22.value,
-    event.target.resp28.value,
-    event.target.resp31.value,
-    event.target.resp36.value,
-    event.target.resp38.value,
+    event.target.perg1.value,
+    event.target.perg2.value,
+    event.target.perg3.value,
+    event.target.perg4.value,
+    event.target.perg5.value,
+    event.target.perg6.value,
+    event.target.perg7.value,
+    event.target.perg8.value,
+    event.target.perg9.value,
+    event.target.perg10.value,
 ];
 
 scrollPage();
