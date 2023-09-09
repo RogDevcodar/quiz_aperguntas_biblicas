@@ -40,24 +40,24 @@ scrollPage();
         if (score === counter) {
             clearInterval(timer);
         }
-        popupResultP.innerHTML = `Você acertou <strong>${counter}%</strong> das perguntas!`
+        popupResultP.innerHTML = `<strong>${counter}%</strong> de acerto!`
         counter++;
     }, 10)
 
         if (score === 0) {
-        popupAvaliacao.textContent = 'Tente novamente!'  
+        popupAvaliacao.innerHTML = '<span>Tente novamente!</span>'  
          
     } else if (score >= 10 && score <= 30) {
-        popupAvaliacao.textContent = 'Que tal tentar melhorar sua pontuação?'
+        popupAvaliacao.innerHTML = `<span>Que tal tentar melhorar sua pontuação?</span>`
     
     } else if (score > 30 && score <= 60) {
-        popupAvaliacao.textContent = 'Não está mal, mas ainda há espaço para melhora.'
+        popupAvaliacao.innerHTML = `<span>Não está mal, mas ainda há espaço para melhora.</span>`
     
     } else if (score > 60 && score <= 90) {
-        popupAvaliacao.textContent = 'Muito bem! Você tem um bom conhecimento da bíblia.'
+        popupAvaliacao.innerHTML = `<span>Muito bem! Você tem um bom conhecimento da bíblia.</span>`
     
     } else if (score === 100) {
-        popupAvaliacao.textContent = 'Parabéns! Seu conhecimento da bíblia é excelente!'
+        popupAvaliacao.innerHTML = `<span>Parabéns! Seu conhecimento da bíblia é excelente!</span>`
     }
     
 })
