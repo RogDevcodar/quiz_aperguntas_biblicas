@@ -21,13 +21,15 @@
 .area-popup {
     position: relative;
     display: flex;
-    background: #cad7ec;
+    background: rgba(23, 28, 169, 0.8);
+    /* background: #cad7ec; */
     width: 90%;
     max-width: 500px;
     height: 200px;
-    border: 5px solid #87afee;
+    border: 5px solid rgba(14, 3, 112, 0.8);
     margin: 10% auto;
     border-radius: 10px;
+    box-shadow: 2px 2px 10px #000;
     
     
 }
@@ -44,7 +46,7 @@
     text-align: center;
     font-size:17px;
     text-shadow: 1px 1px 1px #47474f;
-    color: #2c1a9f;
+    color: #e0d3d3;
     
 }
 strong {
@@ -58,8 +60,8 @@ strong {
     width: 95%;
     padding: 6px;
     display: block;
-    color: #1111a6;
-    box-shadow: 2px 2px 4px #aaacd2;
+    color: #e0d3d3;
+    border: 2px dashed #aaacd2;
     border-radius: 6px;
     margin: 0 auto;
     font-size: 15px;
@@ -89,7 +91,8 @@ strong {
     top: 5px;
     right: 10px;
     cursor: pointer;
-    background: crimson;
+    background: rgba(172, 36, 36, 0.8);
+    /* background: crimson; */
     width: 20px;
     height: 20px;
     text-align: center;
@@ -97,7 +100,8 @@ strong {
     border-radius: 4px;
 }
 .closed-popup:hover {
-    background: crimson;
+    /* background: crimson; */
+    background: rgba(172, 36, 36, 0.8);
     width: 20px;
     height: 20px;
     text-align: center;
@@ -190,6 +194,7 @@ fieldset {
     border-radius: 6px;
     font-size: 15px;
     cursor: pointer;
+    box-shadow: 2px 2px 4px #171515;
 }
 
 .btn-inputs:hover {
