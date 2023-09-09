@@ -25,7 +25,7 @@
     width: 90%;
     max-width: 500px;
     height: 200px;
-    border: 5px solid #FFF;
+    border: 5px solid #8f8ade;
     margin: 10% auto;
     border-radius: 10px;
     
@@ -45,20 +45,24 @@
     font-size:17px;
     text-shadow: 1px 1px 1px #47474f;
     color: #2c1a9f;
+    
 }
 strong {
     font-size: 40px;
     text-shadow: 2px 2px 2px #171515;
-    color: #6652e8;
+    color: #7567d4;
 }
 
 .popup-avaliacao {
     text-align: center;
-    width: 100%;
-    background: #5858e1;
+    width: 95%;
     padding: 6px;
-    color: #FFF;
+    display: block;
+    color: #1111a6;
     box-shadow: 2px 2px 4px #171515;
+    border-radius: 6px;
+    margin: 0 auto;
+    font-size: 15px;
 }
 
 .btn-popup {
@@ -259,7 +263,9 @@ span {
     .resposta-bottom {
         font-size: 10px;
     }
-
+    .popup-avaliacao {
+        font-size: 13px;
+    }
    
 }
 
@@ -296,6 +302,9 @@ span {
 
      .resposta-bottom {
         font-size: 10px;
+    }
+    .popup-avaliacao {
+        font-size: 13px;
     }
 
     
