@@ -71,13 +71,13 @@ divClosedPopup.addEventListener('click', () => {
 
 const btnPopup = document.querySelector('.btn-popup');
 const respostaBottomP = document.querySelector('.resposta-bottom-p');
-
+ 
 //BOTÃO QUE ACESSA AS RESPOSTAS DA POPUP
     btnPopup.addEventListener('click', () => {
     
     divBackgroundEsmaecido.style.display = 'none';
     scrollTo(0, 1800);
-    respostaBottomP.innerHTML = '<b>Respostas:</b> <b>1.</b>(C), <b>2.</b>(D), <b>3.</b>(C), <b>4.</b>(B), <b>5.</b>(D), <b>6.</b>(B), <b>7.</b>(D), <b>8.</b>(B), <b>9.</b>(D), <b>10.</b>(B)'
+    respostaBottomP.innerHTML = '<b>Gabarito:</b> <b>1.</b>(C), <b>2.</b>(D), <b>3.</b>(C), <b>4.</b>(B), <b>5.</b>(D), <b>6.</b>(B), <b>7.</b>(D), <b>8.</b>(B), <b>9.</b>(D), <b>10.</b>(B)'
 });
 
 //FUNÇÃO QUE ROLA PÁGINA PARA O TOPO E EXIBE A POPUP (DECLARADA LINHA - 25)
