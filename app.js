@@ -82,19 +82,10 @@ const respostaBottomP = document.querySelector('.resposta-bottom-p');
 
 //FUNÇÃO QUE ROLA PÁGINA PARA O TOPO E EXIBE A POPUP (DECLARADA LINHA - 25)
 const scrollPage = () => {
-    
-    const time = setInterval (() => {
-        
-        for (let i = 1800; i >= 0; i--) {
-            scrollTo(0, i);
-            clearInterval(time);
-           
-            
-       }
-    }, 30)
+    scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
    divBackgroundEsmaecido.style.display = 'block';
 };
-
-
-
- 
