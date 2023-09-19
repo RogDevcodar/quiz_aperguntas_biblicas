@@ -155,6 +155,7 @@ fieldset {
     margin-bottom: 10px;
     left: 30px;
     z-index: 0;
+    cursor: pointer;
     
 }
 
